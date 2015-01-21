@@ -1,0 +1,75 @@
+2013-08-10 22:18:28 Error: [MissingActionException] Action UsersController::admin_logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_logout',
+)
+Request URL: /ddd_master/admin/users/logout
+Stack Trace:
+#0 C:\wamp\www\ddd_master\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\ddd_master\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\ddd_master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-08-10 22:18:29 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /ddd_master/admin/
+Stack Trace:
+#0 C:\wamp\www\ddd_master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-08-10 22:19:09 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'naturfg4_mifty\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /ddd_master/
+Stack Trace:
+#0 C:\wamp\www\ddd_master\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\ddd_master\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\ddd_master\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\ddd_master\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\ddd_master\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\wamp\www\ddd_master\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\ddd_master\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\ddd_master\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\ddd_master\app\View\Users\login.ctp(3): FormHelper->create('User')
+#9 C:\wamp\www\ddd_master\lib\Cake\View\View.php(945): include('C:\wamp\www\ddd...')
+#10 C:\wamp\www\ddd_master\lib\Cake\View\View.php(907): View->_evaluate('C:\wamp\www\ddd...', Array)
+#11 C:\wamp\www\ddd_master\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\ddd...')
+#12 C:\wamp\www\ddd_master\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#13 C:\wamp\www\ddd_master\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#14 C:\wamp\www\ddd_master\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 C:\wamp\www\ddd_master\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2013-08-11 01:20:16 Error: Fatal Error (1): Cannot unset string offsets in [C:\wamp\www\ddd_master\lib\Cake\View\Helper\HtmlHelper.php, line 355]
+2013-08-11 01:20:16 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /ddd_master/dashboard
+Stack Trace:
+#0 C:\wamp\www\ddd_master\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Cannot unset st...', 'C:\wamp\www\ddd...', 355)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', 'C:\wamp\www\ddd...', 355, Array)
+#2 C:\wamp\www\ddd_master\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', 'C:\wamp\www\ddd...', 355, Array)
+#3 C:\wamp\www\ddd_master\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-11 01:30:42 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\wamp\www\ddd_master\app\Controller\UsersController.php, line 92]
+2013-08-11 01:30:42 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /ddd_master/users/delete/2
+Stack Trace:
+#0 C:\wamp\www\ddd_master\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\ddd...', 92)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\ddd...', 92, Array)
+#2 C:\wamp\www\ddd_master\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\ddd...', 92, Array)
+#3 C:\wamp\www\ddd_master\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-11 01:41:42 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\wamp\www\ddd_master\app\View\Users\index.ctp, line 36]
+2013-08-11 01:41:42 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /ddd_master/dashboard
+Stack Trace:
+#0 C:\wamp\www\ddd_master\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\ddd...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\ddd...', 36, Array)
+#2 C:\wamp\www\ddd_master\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\ddd...', 36, Array)
+#3 C:\wamp\www\ddd_master\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
