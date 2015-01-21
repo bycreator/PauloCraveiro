@@ -1,4 +1,5 @@
-# PauloCraveiro
+# SysFramework
+    > TiagoSerra
 
 Users Database Table
 Let’s start by creating the users database table. The users table contains a user’s username, password and role. Additional fields are meta fields such as created and modified dates as well as a status field. (I never actually delete records, just turn their status to 0.) Here is what the final users table looks like:
