@@ -485,13 +485,14 @@ Index.ctp acts as my dashboard and can only be accessed when a user is logged-in
 <?php 
 echo $this->Html->link( "Logout",   array('action'=>'logout') ); 
 ?>
+
 It produces this form:
 
-dashboard
-Edit.ctp
+# Edit.ctp
 Edit allows you to edit data about a given user. In my case, I don’t allow users to change their username and their password only gets changed if they enter a value. (Most of these rules were inspired by the rules that WordPress has for users ) The code is below
 
 <!-- app/View/Users/add.ctp -->
+
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
